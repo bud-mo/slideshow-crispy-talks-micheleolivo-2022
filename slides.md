@@ -5,14 +5,15 @@ class: text-center
 highlighter: shiki
 lineNumbers: false
 info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
+  ## Michele Olivo's Slides for Crispy Talk 2022
+  Test-Driven development
 
-  Learn more at [Sli.dev](https://sli.dev)
+  [Github repository](https://github.com/bud-mo/slideshow-crispy-talks-micheleolivo-2022)
 drawings:
   persist: false
 css: unocss
 title: Test-Driven Development
+download: true
 ---
 
 # Test-Driven Development
@@ -28,6 +29,23 @@ topic, at least it was my reaction.
 
 But the way You approach the code can help You a lot, really!
 -->
+
+---
+layout: center
+---
+
+# About this slideshow
+
+This slideshow can be found at
+
+[slideshow-crispy-talks-micheleolivo-2022.vercel.app](https://slideshow-crispy-talks-micheleolivo-2022.vercel.app)
+
+<br>
+<br>
+
+The code is available on [Github].
+
+[Github]: https://github.com/bud-mo/slideshow-crispy-talks-micheleolivo-2022
 
 ---
 layout: center
