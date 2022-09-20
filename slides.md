@@ -167,12 +167,114 @@ To achieve that peace of mind We must follow 3 simple golden rules:
 -->
 
 ---
-image: '/images/so-boring.jpg'
-layout: image
+background: '/images/split.jpg'
+layout: cover
 ---
 
+# It's all about splitting
+
 ---
 
-# Tools
+# Split a React component
 
-For a React application
+```tsx {all|4|6-8}
+import useMyComponent from './use-my-component';
+
+const MyComponent: FC = () => {
+  const { name } = useMyComponent();
+  return (
+    <div>
+      Hello {name}
+    </div>
+  );
+};
+```
+
+Source code on [Github](https://github.com/bud-mo/slideshow-crispy-talks-micheleolivo-2022/blob/master/example-code/src/components/my-component.tsx)
+
+---
+layout: two-cols
+---
+
+# Unit test
+
+Of a React component
+
+```tsx {all|4-6|11-13|15|all}
+vi.mock('../hooks/use-my-component', () => {
+  return {
+    default: vi.fn()
+      .mockImplementation(
+        () => ({ name: 'Buddy' })
+      ),
+  };
+});
+
+it('Should render the name', () => {
+  render(
+    <MyComponent />,
+  );
+  expect(
+    screen.getByText(/Hello Buddy!/)
+  ).toBeInTheDocument();
+});
+```
+
+Source code on [Github](https://github.com/bud-mo/slideshow-crispy-talks-micheleolivo-2022/blob/master/example-code/src/components/my-component.test.tsx)
+
+::right::
+
+<v-click>
+
+# Result
+
+Of the test
+
+```
+ ✓ src/components/my-component.test.tsx (1)
+
+Test Files  1 passed (1)
+     Tests  1 passed (1)
+  Start at  17:33:58
+  Duration  2.66s (transform 743ms, setup 222ms, collect 441ms, tests 33ms)
+```
+
+</v-click>
+
+---
+layout: two-cols
+---
+
+# Unit test
+
+Of a React hook
+
+```tsx {all}
+it('Should return an empty name', () => {
+  const { result } = renderHook(() => useMyComponent());
+  expect(result.current).toStrictEqual({
+    name: undefined
+  });
+});
+```
+
+Source code on [Github](https://github.com/bud-mo/slideshow-crispy-talks-micheleolivo-2022/blob/master/example-code/src/hook/use-my-component.test.ts)
+
+::right::
+
+<v-click>
+
+# Result
+
+Of the test
+
+```
+ ✓ src/hooks/use-my-component.test.ts (1)
+
+Test Files  1 passed (1)
+     Tests  1 passed (1)
+  Start at  18:04:51
+  Duration  1.61s (transform 521ms, setup 98ms, collect 51ms, tests 18ms)
+```
+
+</v-click>
