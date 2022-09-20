@@ -258,7 +258,7 @@ it('Should return an empty name', () => {
 });
 ```
 
-Source code on [Github](https://github.com/bud-mo/slideshow-crispy-talks-micheleolivo-2022/blob/master/example-code/src/hook/use-my-component.test.ts)
+Source code on [Github](https://github.com/bud-mo/slideshow-crispy-talks-micheleolivo-2022/blob/master/example-code/src/hooks/use-my-component.test.ts)
 
 ::right::
 
