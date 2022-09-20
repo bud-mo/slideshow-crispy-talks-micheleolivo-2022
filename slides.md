@@ -1,6 +1,6 @@
 ---
 theme: default
-background: /images/mechanic-watch.jpg
+background: '/images/mechanic-watch.jpg'
 class: text-center
 highlighter: shiki
 lineNumbers: false
@@ -45,7 +45,7 @@ Introduction to TDD
 
 ---
 layout: image-right
-image: /images/bored-guy.jpg
+image: '/images/bored-guy.jpg'
 ---
 
 # The definition
@@ -66,7 +66,7 @@ the thing you are going to do can be tested.
 
 ---
 layout: image-right
-image: /images/why.jpg
+image: '/images/why.jpg'
 ---
 
 # Why?
@@ -113,7 +113,7 @@ So we have happy customers and PMs
 -->
 ---
 layout: image-right
-image: /images/rocks-on-water.jpg
+image: '/images/rocks-on-water.jpg'
 ---
 
 # How?
@@ -149,7 +149,7 @@ To achieve that peace of mind We must follow 3 simple golden rules:
 -->
 
 ---
-image: /images/so-boring.jpg
+image: '/images/so-boring.jpg'
 layout: image
 ---
 
