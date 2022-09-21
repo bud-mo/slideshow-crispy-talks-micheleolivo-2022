@@ -14,6 +14,16 @@ drawings:
 css: unocss
 title: Test-Driven Development
 download: false
+hideInToc: true
+---
+
+# ¡Hola!
+
+---
+background: '/images/mechanic-watch.jpg'
+layout: cover
+class: text-center
+hideInToc: true
 ---
 
 # Test-Driven Development
@@ -31,10 +41,8 @@ But the way You approach the code can help You a lot, really!
 -->
 
 ---
-layout: center
+layout: intro
 ---
-
-# About this slideshow
 
 This slideshow can be found at
 
@@ -49,21 +57,23 @@ The code is available on [Github].
 
 ---
 layout: center
+hideInToc: true
 ---
 
 # Schedule
 
-Introduction to TDD
+<Toc />
 
-1. Boring stuff
-1. Why
-1. How
-1. Examples
-1. Wrap-up
+---
+layout: section
+---
+
+# Boring stuff
 
 ---
 layout: image-right
 image: '/images/bored-guy.jpg'
+hideInToc: true
 ---
 
 # The definition
@@ -87,13 +97,34 @@ the thing you are going to do can be tested.
 -->
 
 ---
-layout: image-right
-image: '/images/why.jpg'
+layout: section
 ---
 
-# Why?
+# Why
 
-Why we **need** it?
+---
+layout: quote
+hideInToc: true
+---
+
+> Let me touch this little thing
+
+_You_, 2022
+
+---
+layout: image
+image: '/images/cleveland-clinic.jpg'
+---
+
+---
+layout: image-right
+image: '/images/why.jpg'
+hideInToc: true
+---
+
+# Why it is happened?
+
+How TDD helps me?
 
 <v-click>
 
@@ -133,30 +164,53 @@ So We write less bugs, that means We can spend less time debugging them.
 
 So we have happy customers and PMs
 -->
+
+---
+layout: section
+---
+
+# How
+
 ---
 layout: image-right
 image: '/images/rocks-on-water.jpg'
+hideInToc: true
 ---
 
-# How?
+# How can I start?
 
-**How can I** achieve the peace of mind?
+What can I do to apply TDD?
 
-## 🌟 Golden rules 🌟
+## <noto-glowing-star /> Golden rules* <noto-glowing-star />
+
+<br>
 
 <v-click>
 
 1. 🪓 Split the code
 
 </v-click>
+<br>
 <v-click>
 
 2. 🥇 Create just one test
 
 </v-click>
+<br>
 <v-click>
 
 3. 🎯 Focus on the task related to the test
+
+</v-click>
+
+<br>
+<br>
+<br>
+<br>
+
+<v-click>
+
+###### * Assuming that the requirements are crystal-clear
 
 </v-click>
 
@@ -173,13 +227,35 @@ To achieve that peace of mind We must follow 3 simple golden rules:
 ---
 background: '/images/split.jpg'
 layout: cover
+class: text-center
+hideInToc: true
 ---
 
 # It's all about splitting
 
+<v-click>
+
+Seriously
+
+</v-click>
+
+---
+layout: image
+image: '/images/code-is-code.jpg'
+---
+
+---
+layout: section
+---
+
+# Examples
+
+---
+hideInToc: true
 ---
 
 # Code Split
+
 of a React component
 
 ```tsx {all|4|6-8}
@@ -199,6 +275,7 @@ Source code on [Github](https://github.com/bud-mo/slideshow-crispy-talks-michele
 
 ---
 layout: two-cols
+hideInToc: true
 ---
 
 # Unit test
@@ -248,6 +325,7 @@ Test Files  1 passed (1)
 
 ---
 layout: two-cols
+hideInToc: true
 ---
 
 # Unit test
@@ -286,6 +364,7 @@ Test Files  1 passed (1)
 
 ---
 layout: two-cols
+hideInToc: true
 ---
 
 # Stories
@@ -313,3 +392,33 @@ Source code on [Github](https://github.com/bud-mo/slideshow-crispy-talks-michele
 <div class="absolute left-120 top-0">
   <img src="/images/screenshot-storybook-my-component.png" class="min-w-230"/>
 </div>
+
+---
+layout: section
+---
+
+# Wrap-up
+
+---
+layout: image-right
+image: '/images/it-is-fine.jpg'
+hideInToc: true
+---
+
+# You can continue in the way you live...
+
+like this guy
+
+<noto-see-no-evil-monkey class="mx-32 my-20 text-8xl" />
+
+---
+layout: image-right
+image: '/images/new-level.jpg'
+hideInToc: true
+---
+
+# Or You can Level Up
+
+and be an awesome developer
+
+<noto-star-struck class="m-32 text-8xl" />
