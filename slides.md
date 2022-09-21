@@ -74,6 +74,10 @@ Test-driven development (TDD) is a software development process **relying on sof
 
 This is as opposed to software being developed first and test cases created later.
 
+<br>
+
+Definition from [Wikipedia](https://en.wikipedia.org/wiki/Test-driven_development)
+
 <!--
 First, we need to have in mind the definition of the test-driven development
 approach.
@@ -175,7 +179,8 @@ layout: cover
 
 ---
 
-# Split a React component
+# Code Split
+of a React component
 
 ```tsx {all|4|6-8}
 import useMyComponent from './use-my-component';
@@ -198,7 +203,7 @@ layout: two-cols
 
 # Unit test
 
-Of a React component
+of a React component
 
 ```tsx {all|4-6|11-13|15|all}
 vi.mock('../hooks/use-my-component', () => {
@@ -228,7 +233,7 @@ Source code on [Github](https://github.com/bud-mo/slideshow-crispy-talks-michele
 
 # Result
 
-Of the test
+of the test
 
 ```
  ✓ src/components/my-component.test.tsx (1)
@@ -247,7 +252,7 @@ layout: two-cols
 
 # Unit test
 
-Of a React hook
+of a React hook
 
 ```tsx {all}
 it('Should return an empty name', () => {
@@ -266,7 +271,7 @@ Source code on [Github](https://github.com/bud-mo/slideshow-crispy-talks-michele
 
 # Result
 
-Of the test
+of the test
 
 ```
  ✓ src/hooks/use-my-component.test.ts (1)
@@ -285,7 +290,7 @@ layout: two-cols
 
 # Stories
 
-With [Storybook](https://storybook.js.org/)
+with [Storybook](https://storybook.js.org/)
 
 ```tsx {all|9-11|all}
 export default {
