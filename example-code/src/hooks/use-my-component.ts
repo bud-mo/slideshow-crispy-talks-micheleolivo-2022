@@ -4,8 +4,8 @@ type UseMyComponentReturnType = {
 	name: string|undefined;
 };
 
-export default function useMyComponent(): UseMyComponentReturnType {
-	const [name, setName] = useState(undefined);
+export default function useMyComponent(defaultName?: string): UseMyComponentReturnType {
+	const [name, setName] = useState(defaultName);
 	// Call an awesome API
 	return useMemo(() => ({ name }), [name]);
 }

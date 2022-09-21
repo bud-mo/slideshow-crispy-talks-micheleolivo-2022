@@ -8,13 +8,23 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "test": "vitest",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.19.1",
+    "@storybook/addon-actions": "^6.5.12",
+    "@storybook/addon-essentials": "^6.5.12",
+    "@storybook/addon-interactions": "^6.5.12",
+    "@storybook/addon-links": "^6.5.12",
+    "@storybook/builder-vite": "^0.2.2",
+    "@storybook/react": "^6.5.12",
+    "@storybook/testing-library": "^0.0.13",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^12.1.5",
     "@testing-library/react-hooks": "^7.0.2",
@@ -22,8 +32,9 @@
     "@types/react": "^17.0.50",
     "@types/react-dom": "^17.0.17",
     "@vitejs/plugin-react": "^2.1.0",
-    "typescript": "^4.6.4",
+    "babel-loader": "^8.2.5",
     "jsdom": "latest",
+    "typescript": "^4.6.4",
     "vite": "^3.1.0",
     "vitest": "^0.23.4"
   }

@@ -278,3 +278,33 @@ Test Files  1 passed (1)
 ```
 
 </v-click>
+
+---
+layout: two-cols
+---
+
+# Stories
+
+With [Storybook](https://storybook.js.org/)
+
+```tsx {all|9-11|all}
+export default {
+  title: 'Components/MyComponent',
+  component: MyComponent,
+} as ComponentMeta<typeof MyComponent>;
+
+const Template: ComponentStory<typeof MyComponent> = (args) => <MyComponent {...args} />;
+
+export const Default = Template.bind({});
+Default.args = {
+  defaultName: 'Buddy',
+};
+```
+
+Source code on [Github](https://github.com/bud-mo/slideshow-crispy-talks-micheleolivo-2022/blob/master/example-code/src/components/my-component.stories.tsx)
+
+::right::
+
+<div class="absolute left-120 top-0">
+  <img src="/images/screenshot-storybook-my-component.png" class="min-w-230"/>
+</div>

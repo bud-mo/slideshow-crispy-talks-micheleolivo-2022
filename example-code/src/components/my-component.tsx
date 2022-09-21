@@ -1,8 +1,12 @@
 import React, { FC } from 'react';
 import useMyComponent from '../hooks/use-my-component';
 
-const MyComponent: FC = () => {
-	const { name } = useMyComponent();
+type MyComponentTypes = {
+	defaultName?: string;
+};
+
+const MyComponent: FC<MyComponentTypes> = ({ defaultName }) => {
+	const { name } = useMyComponent(defaultName);
 	return (
 		<div>
 			Hello {name}!
