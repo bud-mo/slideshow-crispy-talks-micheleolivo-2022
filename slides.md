@@ -46,7 +46,7 @@ layout: intro
 
 This slideshow can be found at
 
-[slideshow-crispy-talks-micheleolivo-2022.vercel.app](https://slideshow-crispy-talks-micheleolivo-2022.vercel.app)
+[https://tinyurl.com/mo-ct-2022](https://tinyurl.com/mo-ct-2022)
 
 <br>
 <br>
@@ -115,6 +115,15 @@ _You_, 2022
 layout: image
 image: '/images/cleveland-clinic.jpg'
 ---
+
+---
+layout: quote
+hideInToc: true
+---
+
+> It will take 5 years of refactoring to fix this thing because "reasons"
+
+_You_, 2022
 
 ---
 layout: image-right
@@ -410,6 +419,12 @@ hideInToc: true
 like this guy
 
 <noto-see-no-evil-monkey class="mx-32 my-20 text-8xl" />
+
+<v-click>
+
+No, is **NOT** fine.
+
+</v-click>
 
 ---
 layout: image-right
