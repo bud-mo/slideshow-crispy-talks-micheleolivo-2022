@@ -17,7 +17,7 @@ download: false
 hideInToc: true
 ---
 
-# ¡Hola!
+# Ciao!
 
 ---
 background: '/images/mechanic-watch.jpg'
@@ -44,6 +44,13 @@ But the way You approach the code can help You a lot, really!
 layout: intro
 ---
 
+# I'm Michele
+
+an Head of Frontend Development in Crispy Bacon
+
+<br>
+<br>
+
 This slideshow can be found at
 
 [https://tinyurl.com/mo-ct-2022](https://tinyurl.com/mo-ct-2022)
@@ -51,7 +58,7 @@ This slideshow can be found at
 <br>
 <br>
 
-The code is available on [Github].
+The code of this slideshow and complete code examples are available on [Github].
 
 [Github]: https://github.com/bud-mo/slideshow-crispy-talks-micheleolivo-2022
 
